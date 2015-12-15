@@ -1,33 +1,33 @@
 <?php 
 
-namespace IuriiP\LaravelDbBackup\Commands;
+namespace IuriiP\DbBackup\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Config;
-use IuriiP\LaravelDbBackup\DatabaseBuilder;
-use IuriiP\LaravelDbBackup\ConsoleColors;
-use IuriiP\LaravelDbBackup\Console;
+use IuriiP\DbBackup\DatabaseBuilder;
+use IuriiP\DbBackup\ConsoleColors;
+use IuriiP\DbBackup\Console;
 
 class BaseCommand extends Command 
 {
 	/**
-	 * @var IuriiP\LaravelDbBackup\DatabaseBuilder
+	 * @var IuriiP\DbBackup\DatabaseBuilder
 	 */
 	protected $databaseBuilder;
 
 	/**
-	 * @var IuriiP\LaravelDbBackup\ConsoleColors
+	 * @var IuriiP\DbBackup\ConsoleColors
 	 */
 	protected $colors;
 	
 	/**
-	 * @var IuriiP\LaravelDbBackup\Console
+	 * @var IuriiP\DbBackup\Console
 	 */
 	protected $console;
 
 	/**
-	 * @param IuriiP\LaravelDbBackup\DatabaseBuilder $databaseBuilder
-	 * @return IuriiP\LaravelDbBackup\Commands\BaseCommand
+	 * @param IuriiP\DbBackup\DatabaseBuilder $databaseBuilder
+	 * @return IuriiP\DbBackup\Commands\BaseCommand
 	 */
 	public function __construct(DatabaseBuilder $databaseBuilder)
 	{
@@ -39,7 +39,7 @@ class BaseCommand extends Command
 	}
 
 	/**
-	 * @return IuriiP\LaravelDbBackup\Databases\DatabaseContract
+	 * @return IuriiP\DbBackup\Databases\DatabaseContract
 	 */
 	public function getDatabase($database)
 	{

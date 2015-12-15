@@ -1,15 +1,15 @@
 <?php 
 
-namespace IuriiP\LaravelDbBackup\Databases;
+namespace IuriiP\DbBackup\Databases;
 
 use Illuminate\Support\Facades\Config;
-use IuriiP\LaravelDbBackup\Databases\DatabaseContract;
-use IuriiP\LaravelDbBackup\Console;
+use IuriiP\DbBackup\Databases\DatabaseContract;
+use IuriiP\DbBackup\Console;
 
 class MySQLDatabase implements DatabaseContract 
 {	
 	/**
-	 * @var IuriiP\LaravelDbBackup\Console
+	 * @var IuriiP\DbBackup\Console
 	 */
 	protected $console;
 
@@ -23,13 +23,13 @@ class MySQLDatabase implements DatabaseContract
 	protected $port;
 
 	/**
-	 * @param IuriiP\LaravelDbBackup\Console $destinationFile
+	 * @param IuriiP\DbBackup\Console $destinationFile
 	 * @param string $database
 	 * @param string $user
 	 * @param string $password
 	 * @param string $host
 	 * @param string $port
-	 * @return IuriiP\LaravelDbBackup\Database\MySQLDatabase
+	 * @return IuriiP\DbBackup\Database\MySQLDatabase
 	 */
 	public function __construct(Console $console, $database, $user, $password, $host, $port)
 	{

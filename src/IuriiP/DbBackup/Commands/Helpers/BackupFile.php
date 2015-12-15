@@ -1,4 +1,4 @@
-<?php namespace IuriiP\LaravelDbBackup\Commands\Helpers;
+<?php namespace IuriiP\DbBackup\Commands\Helpers;
 
 class BackupFile {
 
@@ -10,9 +10,9 @@ class BackupFile {
 
 	/**
 	 * @param mixed $filenameArg
-	 * @param IuriiP\LaravelDbBackup\Databases\DatabaseContract $database
+	 * @param IuriiP\DbBackup\Databases\DatabaseContract $database
 	 * @param string $dumpPath
-	 * @return IuriiP\LaravelDbBackup\Commands\Helpers\BackupFile
+	 * @return IuriiP\DbBackup\Commands\Helpers\BackupFile
 	 */ 
 	public function __construct( $filenameArg, $database, $dumpPath )
 	{

@@ -1,5 +1,5 @@
 {
-    "name": "iuriip/laravel-db-backup",
+    "name": "iuriip/db-backup",
     "description": "Easy commands to backup and restore databases for Laravel 5 applications",
     "license": "MIT",
     "authors": [
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "IuriiP\\LaravelDbBackup": "src/"
+            "IuriiP\\DbBackup": "src/"
         }
     }
 }

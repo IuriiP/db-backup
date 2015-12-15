@@ -1,14 +1,14 @@
 <?php 
 
-namespace IuriiP\LaravelDbBackup\Commands;
+namespace IuriiP\DbBackup\Commands;
 
 use Aws\Laravel\AwsFacade as AWS;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-use IuriiP\LaravelDbBackup\Commands\Helpers\BackupFile;
-use IuriiP\LaravelDbBackup\Commands\Helpers\BackupHandler;
+use IuriiP\DbBackup\Commands\Helpers\BackupFile;
+use IuriiP\DbBackup\Commands\Helpers\BackupHandler;
 
 class BackupCommand extends BaseCommand 
 {

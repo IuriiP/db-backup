@@ -1,6 +1,6 @@
 <?php 
 
-namespace IuriiP\LaravelDbBackup\Databases;
+namespace IuriiP\DbBackup\Databases;
 
 interface DatabaseContract 
 {

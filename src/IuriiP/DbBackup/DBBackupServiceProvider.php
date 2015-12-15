@@ -1,8 +1,8 @@
 <?php 
 
-namespace IuriiP\LaravelDbBackup;
+namespace IuriiP\DbBackup;
 
-use IuriiP\LaravelDbBackup\DatabaseBuilder;
+use IuriiP\DbBackup\DatabaseBuilder;
 use Illuminate\Support\ServiceProvider;
 
 class DBBackupServiceProvider extends ServiceProvider 

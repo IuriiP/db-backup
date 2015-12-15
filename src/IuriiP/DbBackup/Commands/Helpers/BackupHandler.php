@@ -1,4 +1,4 @@
-<?php namespace IuriiP\LaravelDbBackup\Commands\Helpers;
+<?php namespace IuriiP\DbBackup\Commands\Helpers;
 
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
@@ -6,19 +6,19 @@ use AWS;
 use Config;
 use File;
 
-use IuriiP\LaravelDbBackup\Commands\Helpers\BackupFile;
-use IuriiP\LaravelDbBackup\ConsoleColors;
+use IuriiP\DbBackup\Commands\Helpers\BackupFile;
+use IuriiP\DbBackup\ConsoleColors;
 
 class BackupHandler {
 
 	/**
-	 * @var IuriiP\LaravelDbBackup\ConsoleColors
+	 * @var IuriiP\DbBackup\ConsoleColors
 	 */
 	protected $colors;
 
 	/**
-	 * @param IuriiP\LaravelDbBackup\ConsoleColors $colors
-	 * @return IuriiP\LaravelDbBackup\Commands\Helpers\BackupHandler
+	 * @param IuriiP\DbBackup\ConsoleColors $colors
+	 * @return IuriiP\DbBackup\Commands\Helpers\BackupHandler
 	 */
 	public function __construct( $colors )
 	{

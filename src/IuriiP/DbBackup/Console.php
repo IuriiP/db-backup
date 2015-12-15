@@ -1,6 +1,6 @@
 <?php 
 
-namespace IuriiP\LaravelDbBackup;
+namespace IuriiP\DbBackup;
 
 use Symfony\Component\Process\Process;
 

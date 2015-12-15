@@ -1,11 +1,11 @@
 <?php 
 
-namespace IuriiP\LaravelDbBackup;
+namespace IuriiP\DbBackup;
 
-use IuriiP\LaravelDbBackup\Console;
-use IuriiP\LaravelDbBackup\Databases\MySQLDatabase;
-use IuriiP\LaravelDbBackup\Databases\SqliteDatabase;
-use IuriiP\LaravelDbBackup\Databases\PostgresDatabase;
+use IuriiP\DbBackup\Console;
+use IuriiP\DbBackup\Databases\MySQLDatabase;
+use IuriiP\DbBackup\Databases\SqliteDatabase;
+use IuriiP\DbBackup\Databases\PostgresDatabase;
 
 class DatabaseBuilder
 {
@@ -15,7 +15,7 @@ class DatabaseBuilder
 	protected $database;
 
 	/**
-	 * @var IuriiP\LaravelDbBackup\Console
+	 * @var IuriiP\DbBackup\Console
 	 */
 	protected $console;
 
@@ -26,7 +26,7 @@ class DatabaseBuilder
 
 	/**
 	 * @param array $realConfig
-	 * @return IuriiP\LaravelDbBackup\Databases\DatabaseContract
+	 * @return IuriiP\DbBackup\Databases\DatabaseContract
 	 */
 	public function getDatabase(array $realConfig)
 	{

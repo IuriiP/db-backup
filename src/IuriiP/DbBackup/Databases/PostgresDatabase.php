@@ -1,14 +1,14 @@
 <?php 
 
-namespace IuriiP\LaravelDbBackup\Databases;
+namespace IuriiP\DbBackup\Databases;
 
-use IuriiP\LaravelDbBackup\Databases\DatabaseContract;
-use IuriiP\LaravelDbBackup\Console;
+use IuriiP\DbBackup\Databases\DatabaseContract;
+use IuriiP\DbBackup\Console;
 
 class PostgresDatabase implements DatabaseContract 
 {	
 	/**
-	 * @var IuriiP\LaravelDbBackup\Console
+	 * @var IuriiP\DbBackup\Console
 	 */
 	protected $console;
 
@@ -21,12 +21,12 @@ class PostgresDatabase implements DatabaseContract
 	protected $host;
 
 	/**
-	 * @param IuriiP\LaravelDbBackup\Console $destinationFile
+	 * @param IuriiP\DbBackup\Console $destinationFile
 	 * @param string $database
 	 * @param string $user
 	 * @param string $password
 	 * @param string $host
-	 * @return IuriiP\LaravelDbBackup\Database\PostgresDatabase
+	 * @return IuriiP\DbBackup\Database\PostgresDatabase
 	 */
 	public function __construct(Console $console, $database, $user, $password, $host)
 	{

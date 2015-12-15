@@ -1,14 +1,14 @@
 <?php 
 
-namespace IuriiP\LaravelDbBackup\Databases;
+namespace IuriiP\DbBackup\Databases;
 
-use IuriiP\LaravelDbBackup\Databases\DatabaseContract;
-use IuriiP\LaravelDbBackup\Console;
+use IuriiP\DbBackup\Databases\DatabaseContract;
+use IuriiP\DbBackup\Console;
 
 class SqliteDatabase implements DatabaseContract 
 {	
 	/**
-	 * @var IuriiP\LaravelDbBackup\Console
+	 * @var IuriiP\DbBackup\Console
 	 */
 	protected $console;
 
@@ -18,9 +18,9 @@ class SqliteDatabase implements DatabaseContract
 	protected $databaseFile;
 
 	/**
-	 * @param IuriiP\LaravelDbBackup\Console $destinationFile
+	 * @param IuriiP\DbBackup\Console $destinationFile
 	 * @param string $databaseFile
-	 * @return IuriiP\LaravelDbBackup\Database\SqliteDatabase
+	 * @return IuriiP\DbBackup\Database\SqliteDatabase
 	 */
 	public function __construct(Console $console, $databaseFile)
 	{

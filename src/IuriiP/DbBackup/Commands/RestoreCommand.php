@@ -1,6 +1,6 @@
 <?php 
 
-namespace IuriiP\LaravelDbBackup\Commands;
+namespace IuriiP\DbBackup\Commands;
 
 use Illuminate\Support\Facades\File;
 use Symfony\Component\Console\Input\InputOption;
