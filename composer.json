@@ -17,5 +17,5 @@
             "IuriiP\\LaravelDbBackup": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
