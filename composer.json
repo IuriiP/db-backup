@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "IuriiP\\DbBackup": "src/"
+            "IuriiP\\DbBackup\\": "src/"
         }
     }
 }
