@@ -7,14 +7,14 @@ Installation
 
 Update your `composer.json` file to include this package as a dependency
 ```json
-"IuriiP/laravel-db-backup": "dev-master"
+"iuriip/db-backup": "dev-master"
 ```
 
 
 Register the service provider by adding it to the providers array in the `config/app.php` file.
 ```php
 'providers' => array(
-    'IuriiP\LaravelDbBackup\DBBackupServiceProvider'
+    'IuriiP\LaravelDbBackup\DBBackupServiceProvider',
 )
 ```
 
@@ -92,6 +92,7 @@ $ php artisan db:restore --last-dump
 ###### List dumps
 ```sh
 $ php artisan db:restore
+$ php artisan db:dumps
 ```
 
 
