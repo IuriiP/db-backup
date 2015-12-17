@@ -14,8 +14,8 @@
 	"laravel/framework": "5.*"
     },
     "autoload": {
-        "psr-4": {
-            "IuriiP\\DbBackup\\": "src/"
+        "psr-0": {
+            "IuriiP\\DbBackup": "src/"
         }
     }
 }
