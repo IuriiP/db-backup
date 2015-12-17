@@ -1,5 +1,6 @@
 {
     "name": "iuriip/db-backup",
+    "version": "1.0",
     "description": "Easy commands to backup and restore databases for Laravel 5 applications",
     "license": "MIT",
     "authors": [
